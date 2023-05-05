@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+li {
+    list-style-type: none;
+}
+
+:root {
+    --main-black: #454545;
+    --main-white: #F0F0F0;
+    --main-blue: #19A7CE;
+    --message-text: #6B728E;
+    --info-width: 624px;
+}
+
+.container {
+    height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.title h2 {
+    font-size: 3.5rem;
+    letter-spacing: 1px;
+    color: var(--main-black);
+}
+
+.underline {
+    width: 8rem;
+    height: 4px;
+    margin: 12px auto;
+    border-radius: 4px;
+    background-color: #AFD3E2
+}
+
+.review {
+    position: relative;
+    width: var(--info-width);
+    min-height: 524px;
+    box-shadow: 0 0 12px rgb(0, 0, 0, 0.3);
+    border-radius: 8px;
+    margin-top: 4rem;
+    text-align: center;
+    color: var(--main-black);
+    overflow: hidden;
+}
+
+
+.person-info-content {
+    display: flex;
+    flex-direction: row;
+}
+
+.person-info {
+    width: var(--info-width);
+    padding: 12px;
+    margin-right: 100px;
+}
+
+.img-container {
+    position: relative;
+    background-color: #19A7CE;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    margin: 2rem auto;
+}
+
+.img-container .person-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 50%;
+    transform: translate(-8px, 4px);
+    border: 4px solid #fff;
+}
+
+.img-icon {
+    position: absolute;
+    top: -4px;
+    left: -8px;
+    background-color: var(--main-blue);
+    border-radius: 50%;
+    padding: 12px;
+}
+
+.img-icon i[class^="fa"] {
+    font-size: 2rem;
+    color: var(--main-white);
+}
+
+
+.author {
+    font-size: 2.2rem;
+}
+
+.job {
+    font-size: 1.8rem;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+.message {
+    margin-top: 24px;
+    color: var(--message-text);
+}
+
+.button-container {
+    position: absolute;
+    left: 0;
+    bottom: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.button-container i[class^="fa"] {
+    cursor: pointer;
+    font-size: 2.5rem;
+    color: #B2B2B2;
+    transition-duration: 250ms;
+    padding: 8px;
+    border-radius: 50%;
+}
+
+.button-container i[class^="fa"]:hover {
+    color: var(--main-white);
+    background-color: var(--main-blue);
+    box-shadow: rgba(0, 0, 0, 0.2) 0 0 4px;
+}
+
+.person-info-content {
+    position: absolute;
+    transition-duration: 1s;
+}
